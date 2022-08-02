@@ -1,0 +1,18 @@
+﻿@page
+@model RazorLanchonete.Pages.Checkout.CheckoutModel
+@{
+}
+
+<h1>Seu pedido!</h1>
+@{
+    var imagePath = "~/images/" + (@Model.ImageTitle + ".jpg");
+}
+<div class="align-content-center">
+    <div class="col-3 mx-auto mb-5">
+        <img src=@imagePath class="w-100" asp-append-version="true" />
+        <p>O pedido para seu @Model.XsaladaName esta pronto!</p>
+        <p>Preço total: @Model.XsaladaPrice R$</p>
+        <br />
+        <a class="btn alert-primary mt-1 mx-auto" asp-area="" asp-page="ThankYou">Confirma o pedido</a>
+    </div>
+</div>

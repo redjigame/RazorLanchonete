@@ -1,0 +1,29 @@
+﻿@page
+@model RazorLanchonete.Pages.Forms.CustomXsaladaModel
+@{
+}
+
+<div class="text-center caontainer">
+    <h1>Faz o seu X-salada</h1>
+    <form method="post" class="mx-auto mt-5 mb-5 px-5 pt-5 pb-5 rounded-5 alert-light col-4">
+        <input type="text" asp-for="Xsalada.XsaladaName" placeholder="Dá um nome ao seu X" />
+        <br />
+        <input type="checkbox" asp-for="Xsalada.Queijo" placeholder="Queijo" />Queijo
+        <br />
+        <input type="checkbox" asp-for="Xsalada.Presunto" placeholder="Presunto" />Presunto
+        <br />
+        <input type="checkbox" asp-for="Xsalada.Hamburger" placeholder="Hamburger" />Hamburger
+        <br />
+        <input type="checkbox" asp-for="Xsalada.Beacon" placeholder="Beacon" />Beacon
+        <br />
+        <input type="checkbox" asp-for="Xsalada.Tomato" placeholder="Tomato" />Tomato
+        <br />
+        <input type="checkbox" asp-for="Xsalada.Alface" placeholder="Alface" />Alface
+        <br />
+        <input type="checkbox" asp-for="Xsalada.Milho" placeholder="Milho" />Milho
+        <br />
+        <input type="checkbox" asp-for="Xsalada.Ervilha" placeholder="Ervilha" />Ervilha
+        <br />
+        <button class="btn btn-primary mt-1" type="submit">Quero meu X</button>
+    </form>
+</div>
